@@ -1,0 +1,98 @@
+@import '../../responsive.scss';
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a{
+        transition: all 0.5s ease;
+
+        @include sm{
+            display: none;
+        }
+        &:hover{
+            scale: 1.01;
+        }
+
+
+    }
+    .left{
+        flex: 3;
+        background-color: pink;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        .logo{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    .right{
+        flex: 2;
+       display: flex ;
+       align-items: center;
+       justify-content: flex-end;
+       height: 100%;
+       background-color: #fcf5f3;
+
+       @include md {
+        background-color: transparent;
+       }
+
+       a{
+        padding: 12px 24px;
+        margin: 20px;
+       }
+       .register{
+        background-color: #fece51;
+       }
+
+       .menuIcon{
+        display: none;
+        z-index: 999;
+        border-radius: 100%;
+        padding: 1px;
+        background-color: black;
+        .icon{
+            width: 36px;
+            height: 36px;
+            color: white;
+            cursor: pointer;
+        }
+
+        @include sm{
+            display: inline;
+        }
+
+       }
+
+       .menu{
+        position: absolute;
+        top: 0;
+        right: -50%;
+        background-color: black;
+        color: white;
+        height: 100vh;
+        width: 50vw;
+        transition: all 0.8s ease;
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+        &.active{
+            right: 0;
+        } 
+        
+        @include sm{
+           a{
+
+           display: initial;
+
+        }}
+       }
+    }
+    
+}
