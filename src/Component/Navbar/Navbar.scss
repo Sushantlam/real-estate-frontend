@@ -12,14 +12,14 @@ nav{
             display: none;
         }
         &:hover{
-            scale: 1.01;
+            scale: 1.05;
         }
 
 
     }
     .left{
         flex: 3;
-        background-color: pink;
+        
         display: flex;
         align-items: center;
         gap: 50px;
@@ -47,6 +47,7 @@ nav{
        }
        .register{
         background-color: #fece51;
+        border-radius: 20px;
        }
 
        .menuIcon{
@@ -69,24 +70,25 @@ nav{
        }
 
        .menu{
-        position: absolute;
-        top: 0;
-        right: -50%;
-        background-color: black;
-        color: white;
-        height: 100vh;
-        width: 50vw;
-        transition: all 0.8s ease;
-        display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-        &.active{
-            right: 0;
-        } 
+        display: none;
         
-        @include sm{
+        
+        @include sm{position: fixed;
+            top: 0;
+            right: -50%;
+            background-color: black;
+            color: white;
+            min-height: 100vh;
+            width: 50%;
+            transition: all 1s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            &.active{
+                right: 0;
+            } 
            a{
 
            display: initial;
