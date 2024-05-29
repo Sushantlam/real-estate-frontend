@@ -12,7 +12,7 @@ const Home = () => {
         <div className='hot'>
         <Checkus/>
         <Bluebg/>
-        <Footer/>
+       
         </div>
     </>
   )

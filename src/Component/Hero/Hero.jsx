@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="homePage">
     <div className="textContainer">
       <div className="wrapper">
-        <h1 className="title">Find Home From Us From Where Your Dream Fulfils</h1>
+        <h1 id="title" className=' text-blue-primary'>Find Home From Us From Where Your Dream Fulfils</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
           explicabo suscipit cum eius, iure est nulla animi consequatur

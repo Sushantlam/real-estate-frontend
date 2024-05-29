@@ -4,7 +4,7 @@ import check from '../../assets/check.png';
 const Checkus = () => {
     return (
         <div className=' w-full  py-[32px]    md:py-[40px]  lg:py-[64px] '>
-            <div className='  flex  flex-col gap-[52px]  md:w-[full] md:gap-[48px] lg:gap-0 lg:flex-row justify-between lg:w-full lg:max-w-[1280px]  lg:h-[100%]'>
+            <div className='  flex  flex-col gap-[52px]  md:w-[full] md:gap-[48px] lg:gap-0 lg:flex-row justify-between lg:w-full lg:max-w-[1366px]  lg:h-[100%]'>
              
 
 

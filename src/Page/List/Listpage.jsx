@@ -9,6 +9,7 @@ import List from "../../Component/List/List";
 import Naksa from "../../Component/Map/Map";
 import Hot from "../../Component/Hotproperty/Hot";
 import Checkus from "../../Component/Checkus/Checkus";
+import Footer from "../../Component/Footer/Footer";
 
 function ListPage() {
   const data = listData
@@ -23,11 +24,11 @@ function ListPage() {
       </div>
     </div>
     <div className="mapContainer">
-      <Naksa />
+      <Naksa data={data}/>
     </div>
    
   </div>
-  <Checkus/>
+ 
   </div>;
 }
 

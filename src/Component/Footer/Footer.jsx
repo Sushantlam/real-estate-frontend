@@ -1,11 +1,12 @@
 import React from 'react'
 
 import { FaApple, FaFacebook, FaGoogle, FaInstagram } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
     <div className=' w-full py-[32px] h-[600px]   md:py-[40px]  lg:py-[64px] '>
-    <div className='  flex  flex-col gap-[5px]  md:w-[full] md:gap-[48px] lg:gap-[4px] lg:flex-col justify-between  w-full lg:max-w-[1280px]  lg:h-[100%]'>
+    <div className='  flex  flex-col gap-[5px]  md:w-[full] md:gap-[48px] md:max-w-[1024px] lg:gap-[4px] lg:flex-col justify-between  w-full lg:max-w-[1366px] lg:h-[100%]'>
         <div className=' w-full h-[200px] flex justify-between '>
             {/* ImagesFooter */}
             <div className=' flex flex-col w-full  gap-[16px] md:w-[247px] '>
@@ -14,11 +15,12 @@ const Footer = () => {
 
                 </div>
                 <p className='text-[16px] font-semibold font-inter text-gray-primary tracking-tight leading-[24px] md:font-medium md:tracking-tight md:text-[16px] md:leading-[24px]'>Generate outside the box thinking with the possibility to targtet the low.</p>
-<div className=' md:hidden flex gap-[30px] lg:justify-between justify-evenly lg:gap-[14px]'>
-<FaFacebook size={20}/>
-<FaGoogle size={20} />
-<FaApple size={20}/>
-<FaInstagram size={20}/>
+<div className='  flex gap-[30px] cursor-pointer lg:justify-between justify-evenly lg:gap-[14px]'>
+<FaFacebook size={20} color='blue'/>
+<FaGoogle size={20} color='red'/>
+<FaApple size={20} color='black'/>
+<FaTwitter size={20} color='blue'/>
+<FaInstagram size={20} color='red'/>
 
 </div>
 
