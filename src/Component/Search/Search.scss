@@ -75,7 +75,8 @@
     button {
       border: none;
       cursor: pointer;
-      background-color: #fece51;
+      --tw-bg-opacity: 1;
+    background-color: rgb(37 99 235 / var(--tw-bg-opacity));
       flex: 1;
 
       @include sm{
@@ -83,6 +84,8 @@
       }
 
       img {
+        display: flex ;
+        margin: auto;
         width: 24px;
         height: 24px;
       }

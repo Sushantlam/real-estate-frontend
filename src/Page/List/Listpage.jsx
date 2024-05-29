@@ -8,6 +8,7 @@ import List from "../../Component/List/List";
 
 import Naksa from "../../Component/Map/Map";
 import Hot from "../../Component/Hotproperty/Hot";
+import Checkus from "../../Component/Checkus/Checkus";
 
 function ListPage() {
   const data = listData
@@ -26,7 +27,7 @@ function ListPage() {
     </div>
    
   </div>
-  <Hot/>
+  <Checkus/>
   </div>;
 }
 

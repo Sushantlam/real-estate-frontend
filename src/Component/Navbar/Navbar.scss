@@ -36,7 +36,7 @@ nav{
        align-items: center;
        justify-content: flex-end;
        height: 100%;
-       background-color: #fcf5f3;
+       background-color: #f3fcf9;
 
        @include md {
         background-color: transparent;
@@ -47,7 +47,8 @@ nav{
         margin: 20px;
        }
        .register{
-        background-color: #fece51;
+        --tw-bg-opacity: 1;
+    background-color: rgb(37 99 235 / var(--tw-bg-opacity));
         border-radius: 20px;
        }
 
@@ -60,7 +61,8 @@ nav{
         .icon{
             width: 36px;
             height: 36px;
-            color: white;
+            position: fixed;
+            
             cursor: pointer;
         }
 
