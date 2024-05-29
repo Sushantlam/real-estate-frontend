@@ -43,7 +43,7 @@ const Checkus = () => {
 
                     </div>
                     <div className=' lg:w-[40%] w-full h-[100%] '>
-                        <div className=' md:h-[460px] md:w-[full] lg:w-full lg:h-[100%]'>
+                        <div className='flex flex-col justify-end md:h-[460px] md:w-[full] lg:w-full lg:h-[100%]'>
                                <img src={First} className='h-full w-full object-fill' alt="" />
                         </div>
                     </div>

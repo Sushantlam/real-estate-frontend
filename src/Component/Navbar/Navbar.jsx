@@ -23,7 +23,7 @@ const Navbar = () => {
           Login
         </a>
         <div className="menuIcon">
-        <TbMenu2 className="icon"  style={open ? { color: "white" } : { color: "black" }} onClick={()=>setOpen((prev) => !prev)}/>
+        <TbMenu2 className="icon"   onClick={()=>setOpen((prev) => !prev)}/>
         </div>
         <div className={open ? "menu active" : "menu"}>
           <a href="">Home </a>
