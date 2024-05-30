@@ -42,6 +42,34 @@ nav{
         background-color: transparent;
        }
 
+       .user{
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+
+        .photoProfile{
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            align-items: center;
+
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+        .profile{
+            background-color: blue;
+            padding: 12px 24px;
+            cursor: pointer;
+            border-radius: 10px;
+            color: white;
+        }
+       }
+
        a{
         padding: 12px 24px;
         margin: 20px;
@@ -50,6 +78,7 @@ nav{
         --tw-bg-opacity: 1;
     background-color: rgb(37 99 235 / var(--tw-bg-opacity));
         border-radius: 20px;
+        color: white;
        }
 
        .menuIcon{
