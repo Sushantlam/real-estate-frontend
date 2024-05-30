@@ -9,10 +9,12 @@ import { MdOutlinePets } from "react-icons/md";
 import { SiFeedly } from "react-icons/si";
 import { IoRestaurant } from "react-icons/io5";
 import { IoIosSend } from "react-icons/io";
+import Footer from '../../Component/Footer/Footer.jsx';
 
 const Singlepage = () => {
   
   return (
+    <>
     <div className='single'>
       <div className='details'>
         <div className="wrapper">
@@ -121,6 +123,8 @@ const Singlepage = () => {
       </div>
 
     </div>
+     <Footer/>
+     </>
   )
 }
 

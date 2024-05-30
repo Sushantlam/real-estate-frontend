@@ -14,7 +14,7 @@ import Footer from "../../Component/Footer/Footer";
 function ListPage() {
   const data = listData
 
-  return <div style={{height: "100%"}}> <div className="listPage">
+  return <><div style={{height: "100%"}}> <div className="listPage">
     <div className="listContainer">
       <div className="wrapper">
         <Filter/>
@@ -29,7 +29,7 @@ function ListPage() {
    
   </div>
  
-  </div>;
+  </div> <Footer/></> ;
 }
 
 export default ListPage;
