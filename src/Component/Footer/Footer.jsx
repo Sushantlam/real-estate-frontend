@@ -5,7 +5,7 @@ import { FaTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
-    <div className=' w-full py-[32px] h-[600px]   md:py-[40px]  lg:py-[64px] '>
+    <div className=' w-full py-[32px] h-[450px]   md:py-[40px]  lg:py-[64px] '>
     <div className='  flex  flex-col gap-[5px]  md:w-[full] md:gap-[48px] md:max-w-[1024px] lg:gap-[4px] lg:flex-col justify-between  w-full lg:max-w-[1366px] lg:h-[100%]'>
         <div className=' w-full h-[200px] flex justify-between '>
             {/* ImagesFooter */}
