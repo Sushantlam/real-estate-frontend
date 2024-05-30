@@ -1,0 +1,79 @@
+.top{
+    background-color: blue;
+    display: flex;
+        align-items: center;
+        padding: 10px 5px;
+        color: white;
+        justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+
+    .user{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img{
+            height: 40px;
+            border-radius: 50%;
+            width: 40px;
+            cursor: pointer;
+            object-fit: cover;
+        }
+    }
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 300px;
+    overflow-y: scroll;
+    scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent; /* For Firefox */
+    
+    .chatMessage{
+        width: 50%;
+
+        &.own{
+            align-self: flex-end;
+
+          
+        }
+        span{
+            font-size: 12px;
+            background-color: #f7c14b39;
+            padding: 2px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px salmon;
+    height: 60px;
+    align-items: center;
+    
+    textarea{
+        flex:3;
+        height: 100%;
+        border: none;
+        padding: 2px;
+        overflow-y: scroll;
+        scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+      }
+
+      button{
+        flex:1;
+        background-color: blue;
+        color: white;
+        height: 80%;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    
+}
