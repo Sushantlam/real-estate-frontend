@@ -10,17 +10,18 @@ const Navbar = () => {
   return (
     <nav>
       <div className="left">
-        <span href="/" className="logo">
+       <Link to="/"> <span  className="logo">
           Lama
-        </span>
-        <a href="">Home </a>
-        <a href="">About</a>
-        <a href="">Contact</a>
+        </span></Link>
+      <Link to="/">  <a href="">Home </a></Link>
+      <Link to="/list">  <a href="">List </a></Link>
+      <Link to="/about">  <a href="">About </a></Link>
+      <Link to="/contact">  <a href="">Contact </a></Link>
       </div>
       <div className="right">
        {user? ( <div className="user">
         <div className="photoProfile">
-        <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
+        <img src="./Sushant.jpg" alt="" />
         <span>Sushant</span>
         </div>
 

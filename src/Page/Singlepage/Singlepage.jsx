@@ -32,7 +32,7 @@ const Singlepage = () => {
           
             </div>
             <div className="user">
-            <img src={userData.img} alt="" />
+            <img src="./Sushant.jpg" alt="" />
             <span>{userData.name}</span>
            </div>
             </div>

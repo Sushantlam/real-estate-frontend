@@ -11,8 +11,7 @@ const Chat = () => {
 
             
 
-        <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-        <span>Sushant Lama</span>
+            <img src="./Sushant.jpg" alt="" /> <span>Sushant Lama</span>
         <p>Lorem ipsum dolor sit amet consectetur...</p>
 
         </div>
@@ -20,8 +19,7 @@ const Chat = () => {
 
             
 
-<img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-<span>Sushant Lama</span>
+        <img src="./Sushant.jpg" alt="" /><span>Sushant Lama</span>
 <p>Lorem ipsum dolor sit amet consectetur...</p>
 
 </div>
@@ -29,8 +27,7 @@ const Chat = () => {
 
             
 
-<img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-<span>Sushant Lama</span>
+<img src="./Sushant.jpg" alt="" /><span>Sushant Lama</span>
 <p>Lorem ipsum dolor sit amet consectetur...</p>
 
 </div>

@@ -18,6 +18,8 @@ import List from './Page/List/Listpage'
 import Singlepage from './Page/Singlepage/Singlepage'
 import Listpage from './Page/List/Listpage'
 import Profile from './Page/Profile/Profile'
+import About from './Page/About/About'
+import Contact from './Page/Contact/Contact'
 
 function App() {
   const router = createBrowserRouter([
@@ -39,6 +41,14 @@ function App() {
     {
       path:"/profile",
       element:<Profile/>
+    },
+    {
+      path:"/about",
+      element:<About/>
+    },
+    {
+      path:"/contact",
+      element:<Contact/>
     }
   ]
     },
