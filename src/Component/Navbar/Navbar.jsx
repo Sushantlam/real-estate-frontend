@@ -15,8 +15,6 @@ const Navbar = () => {
         </span></Link>
       <Link to="/">  <a href="">Home </a></Link>
       <Link to="/list">  <a href="">List </a></Link>
-      <Link to="/about">  <a href="">About </a></Link>
-      <Link to="/contact">  <a href="">Contact </a></Link>
       </div>
       <div className="right">
        {user? ( <div className="user">
@@ -40,12 +38,12 @@ const Navbar = () => {
         <TbMenu2 className="icon"   onClick={()=>setOpen((prev) => !prev)}/>
         </div>
         <div className={open ? "menu active" : "menu"}>
-          <a href="">Home </a>
-          <a href="">About</a>
-          <a href="">Contact</a>
-          <a href="">Signup </a>
-          <a href="">Login</a>
+        <Link to="/">  <a href="">Home </a></Link>
+      <Link to="/list">  <a href="">List </a></Link>
+      <Link to="/profile">   <div className=" profile">
+         <button>Profile</button>
         </div>
+        </Link>  </div>
       </div>
     </nav>
   );

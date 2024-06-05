@@ -20,6 +20,7 @@ import Listpage from './Page/List/Listpage'
 import Profile from './Page/Profile/Profile'
 import About from './Page/About/About'
 import Contact from './Page/Contact/Contact'
+import Login from './Page/Login/Login'
 
 function App() {
   const router = createBrowserRouter([
@@ -49,6 +50,10 @@ function App() {
     {
       path:"/contact",
       element:<Contact/>
+    }, 
+    {
+      path:"/login",
+      element:<Login/>
     }
   ]
     },

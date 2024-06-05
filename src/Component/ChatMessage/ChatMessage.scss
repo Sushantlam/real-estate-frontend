@@ -59,11 +59,13 @@
     textarea{
         flex:3;
         height: 100%;
-        border: none;
+       
         padding: 2px;
+        border: 1px solid skyblue;
         overflow-y: scroll;
         scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;
+    border-radius: 10px;
       }
 
       button{
