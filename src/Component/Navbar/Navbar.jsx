@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.scss";
 import { TbMenu2 } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Context/AuthContext";
 
 const Navbar = () => {
+  const [open, setOpen ] = useState(false)
 
-    const [open, setOpen ] = useState(false)
-    const user = true
+  const {currentUser} = useContext(AuthContext)
+  console.log(currentUser);
+   
   return (
     <nav>
       <div className="left">
@@ -17,7 +20,7 @@ const Navbar = () => {
       <Link to="/list">  <a href="">List </a></Link>
       </div>
       <div className="right">
-       {user? ( <div className="user">
+       {currentUser? ( <div className="user">
         <div className="photoProfile">
         <img src="./Sushant.jpg" alt="" />
         <span>Sushant</span>
@@ -28,10 +31,10 @@ const Navbar = () => {
         </div>
         </Link>
 
-       </div>): (<div><a href="" className="">
+       </div>): (<div><a href="/register" className="">
           Signup
         </a>
-        <a href="" className="register">
+        <a href="/login" className="register">
           Login
         </a></div>)}
         <div className="menuIcon">

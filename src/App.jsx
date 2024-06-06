@@ -21,6 +21,7 @@ import Profile from './Page/Profile/Profile'
 import About from './Page/About/About'
 import Contact from './Page/Contact/Contact'
 import Login from './Page/Login/Login'
+import Register from './Page/Register/Register'
 
 function App() {
   const router = createBrowserRouter([
@@ -54,6 +55,10 @@ function App() {
     {
       path:"/login",
       element:<Login/>
+    },
+    {
+      path:"/register",
+      element:<Register/>
     }
   ]
     },
