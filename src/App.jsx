@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './layout.scss'
@@ -21,9 +21,11 @@ import Profile from './Page/Profile/Profile'
 import About from './Page/About/About'
 import Contact from './Page/Contact/Contact'
 import Login from './Page/Login/Login'
-import Register from './Page/Register/Register'
+import { AuthContext } from './Context/AuthContext'
+import ProtectedRoute from './ProtectedRoute'
 
 function App() {
+  const { currentUser } = useContext(AuthContext);
   const router = createBrowserRouter([
     {
       path: "/",
@@ -42,7 +44,11 @@ function App() {
     },
     {
       path:"/profile",
-      element:<Profile/>
+      element: (
+        <ProtectedRoute>
+          <Profile />
+        </ProtectedRoute>
+      )
     },
     {
       path:"/about",
@@ -55,10 +61,6 @@ function App() {
     {
       path:"/login",
       element:<Login/>
-    },
-    {
-      path:"/register",
-      element:<Register/>
     }
   ]
     },

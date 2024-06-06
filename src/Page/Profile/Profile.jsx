@@ -6,6 +6,11 @@ import Chat from '../../Component/Chat/Chat'
 
 
 const Profile = () => {
+    
+
+    async function handleLogout(){
+
+    }
   return (
     <>
      <div style={{height: '100%'}}>
@@ -24,7 +29,7 @@ const Profile = () => {
                     <span> Username: <b>Sushant Lama</b> </span>
                     <span> email: <b>sushantlama732@gmail.com</b> </span>
                     <span> Number: <b>9813481120</b> </span>
-
+                    <button onClick={handleLogout}>Logout</button>
                 </div>
 
                 <div className="title">
