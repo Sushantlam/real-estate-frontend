@@ -3,10 +3,19 @@
 .card {
   display: flex;
   gap: 20px;
+  padding: 10px 0px;
+
+  @include sm{
+    gap: 40px;
+  }
 
   .imageContainer {
     flex: 2;
     height: 200px;
+
+    @include sm{
+      display: none;
+    }
 
    
 
@@ -15,6 +24,9 @@
       height: 100%;
       object-fit: cover;
       border-radius: 10px;
+      display: inline;
+
+     
     }
   }
   .textContainer {
@@ -22,7 +34,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
+
+    // @include sm{
+    //   gap: 40px;
+    // }
 
     img {
       width: 16px;

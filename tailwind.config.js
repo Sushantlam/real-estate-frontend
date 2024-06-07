@@ -12,7 +12,7 @@ export default  {
         'dark-bg': '#222b3c',
         'hero-bg': '#F8F9FB',
         'back-bg': '#F5FAFF',
-        'blue-bg': '#2B63D9',
+        'yellow-bg': '#fece51',
         'colo': ' #2C3444',
         'bg-black': '#151B28',
         'bg-form': ' #1C2534',
@@ -28,10 +28,10 @@ export default  {
        
       },
       colors: {
-        'blue-primary': '#A0E9FF',
+        'blue-primary': '#fece51',
         'black-primary': '#272D37',
         'gray-primary': '#5F6D7E',
-        'blue-primary': '#437EF7',
+        'yellow-primary': '#fece51',
         'blackk-primary': '#272D37',
         
 

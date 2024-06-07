@@ -35,7 +35,7 @@ const Checkus = () => {
 
                             </div>
                             <div>
-                                <button className=' px-[18px] py-[12px] rounded-lg bg-blue-600'> Start now</button>
+                                <button className=' px-[18px] py-[12px] rounded-lg bg-yellow-bg'> Start now</button>
                             </div>
 
                         </div>
