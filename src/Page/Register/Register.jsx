@@ -67,9 +67,9 @@ const Register = () => {
           required
           placeholder="Password"
         />
-        <button disabled={isLoading}>Login</button>
+        <button disabled={isLoading}>Register</button>
         {error && <span>{error}</span>}
-        <Link to="/register">{"Don't"} you have an account?</Link>
+        <Link to="/login"> you have an account?</Link>
       </form>
     </div>
     <div className="imgContainer">

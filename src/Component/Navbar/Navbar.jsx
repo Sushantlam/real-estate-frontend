@@ -13,9 +13,9 @@ const Navbar = () => {
   return (
     <nav>
       <div className="left">
-       <Link to="/"> <span  className="logo">
+       <Link to="/"> <h3  className="logo">
           Lama
-        </span></Link>
+        </h3></Link>
       <Link to="/">  <a href="">Home </a></Link>
       <Link to="/list">  <a href="">List </a></Link>
       </div>
@@ -43,9 +43,15 @@ const Navbar = () => {
         <div className={open ? "menu active" : "menu"}>
         <Link to="/">  <a href="">Home </a></Link>
       <Link to="/list">  <a href="">List </a></Link>
-      <Link to="/profile">   <div className=" profile">
+      <Link to="/profile"> 
+      {currentUser? (<div className=" profile">
          <button>Profile</button>
-        </div>
+        </div>): (<> <Link to="/register"> 
+          <a href="">Signup </a>
+        </Link>
+        <Link to="/login"> 
+        <a href="">Login </a>
+        </Link></>)}  
         </Link>  </div>
       </div>
     </nav>

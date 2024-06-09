@@ -23,6 +23,7 @@ import Contact from './Page/Contact/Contact'
 import Login from './Page/Login/Login'
 import { AuthContext } from './Context/AuthContext'
 import ProtectedRoute from './ProtectedRoute'
+import Register from './Page/Register/Register'
 
 function App() {
   const { currentUser } = useContext(AuthContext);
@@ -61,6 +62,10 @@ function App() {
     {
       path:"/login",
       element:<Login/>
+    },
+    {
+      path:"/register",
+      element:<Register/>
     }
   ]
     },
